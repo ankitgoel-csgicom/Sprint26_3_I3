@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Report - CEI.APAC1 26.3 I3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="ASC.png" alt="ASC Logo" class="header-logo">
+            <h1>🚀 Sprint Report</h1>
+            <h2>CEI.APAC1 – 26.3 I3</h2>
+            <div class="dates">
+                <strong>Sprint Start:</strong> 27/May/26 | <strong>Sprint End:</strong> 10/June/26
+            </div>
+        </div>
+
+        <div class="slide-navigation">
+            <button class="nav-btn active" onclick="showSlide(1)">📊 Sprint Stats</button>
+            <button class="nav-btn" onclick="showSlide(2)">📈 Burndown Chart</button>
+            <button class="nav-btn" onclick="showSlide(3)">⚡ Velocity Chart</button>
+            <button class="nav-btn" onclick="showSlide(4)">📤 Items Moved</button>
+            <button class="nav-btn" onclick="showSlide(5)">🐛 Bugs & Stories</button>
+            <button class="nav-btn" onclick="showSlide(6)">🤖 AI Corner</button>
+            <button class="nav-btn" onclick="showSlide(7)">🏆 Wall of Fame</button>
+        </div>
+
+        <!-- Slide 1: Sprint Stats -->
+        <div class="slide active" id="slide1">
+            <div class="card">
+                <div class="card-header">📊 Sprint Statistics</div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">Sprint Commitment</div>
+                        <div class="stat-value">42 SP</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Delivered</div>
+                        <div class="stat-value">35 SP</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Carryover</div>
+                        <div class="stat-value">7 SP</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Delivery Rate</div>
+                        <div class="stat-value">83.3%</div>
+                    </div>
+                </div>
+
+                <div class="summary-box">
+                    <strong>🎯 Delivery Success Rate: 83.33%</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" id="deliveryProgress" style="width: 83.33%">
+                        35/42 Story Points Delivered
+                    </div>
+                </div>
+
+                <div class="defect-section">
+                    <h3 style="margin-bottom: 15px; color: var(--text-primary);">🔧 Efforts on Defect Triaging/Fixing</h3>
+                    <div class="defect-grid">
+                        <div class="defect-item">
+                            <span class="defect-label">Bugs</span>
+                            <span class="defect-count">7</span>
+                        </div>
+                        <div class="defect-item">
+                            <span class="defect-label">Incidents</span>
+                            <span class="defect-count">3</span>
+                        </div>
+                        <div class="defect-item">
+                            <span class="defect-label">Manifest Runs</span>
+                            <span class="defect-count">0</span>
+                        </div>
+                        <div class="defect-item">
+                            <span class="defect-label">Deployments</span>
+                            <span class="defect-count">1</span>
+                        </div>
+                        <div class="defect-item">
+                            <span class="defect-label">WAF/Watcher Defects</span>
+                            <span class="defect-count">0</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 10px;">
+                        <p style="font-size: 1.1rem;"><strong>📝 Note:</strong> Re-DEPLOY Content 1.27.0 in PRD3</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px; padding: 25px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 15px; color: white;">
+                    <h3 style="margin-bottom: 15px;">🔄 Carryover Items (7 Story Points)</h3>
+                    <div style="font-size: 1rem; line-height: 2;">
+                        <p>• <strong>User Story 1169477:</strong> Core Service - Save InstallationPointId in DB through SubmitOrder and SubmitChangeOfServiceOrder API <span style="background: rgba(255,255,255,0.3); padding: 3px 10px; border-radius: 12px; margin-left: 5px;">1 SP - QA</span></p>
+                        <p>• <strong>User Story 1169503:</strong> E2E- Fiber Box Location at time of Serviceability <span style="background: rgba(255,255,255,0.3); padding: 3px 10px; border-radius: 12px; margin-left: 5px;">3 SP - E2E</span></p>
+                        <p>• <strong>User Story 960823:</strong> Enhance RequestFinalInvoices API for Final Invoice Generation on Invoicing Node <span style="background: rgba(255,255,255,0.3); padding: 3px 10px; border-radius: 12px; margin-left: 5px;">1 SP - QA</span></p>
+                        <p>• <strong>User Story 970573:</strong> Capture Interaction for Final Invoice Generation <span style="background: rgba(255,255,255,0.3); padding: 3px 10px; border-radius: 12px; margin-left: 5px;">2 SP - Review & QA</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Burndown Chart -->
+        <div class="slide" id="slide2">
+            <div class="card">
+                <div class="card-header">📈 Burndown Chart</div>
+                
+                <div class="image-container" style="text-align: center;">
+                    <img src="Burndown26.3.I3.png" alt="Burndown Chart - Sprint 26.3 I3" class="uploaded-image" style="display: block;">
+                </div>
+                
+                <div style="margin-top: 20px; padding: 20px; background: var(--light); border-radius: 10px;">
+                    <p style="text-align: center; color: var(--text-secondary);"><em>Note: ADO does not have native burndown chart support. Chart generated from available data.</em></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Velocity Chart -->
+        <div class="slide" id="slide3">
+            <div class="card">
+                <div class="card-header">⚡ Velocity Chart - Sprint 26.3</div>
+                
+                <div class="image-container" style="text-align: center; margin-bottom: 30px;">
+                    <img src="Velocity26.3.I3.png" alt="Velocity Chart - Sprint 26.3" class="uploaded-image" style="display: block;">
+                </div>
+
+                <div class="iteration-section">
+                    <div class="iteration-card">
+                        <h3 class="iteration-header">26.3.I1 Metrics</h3>
+                        <div class="velocity-metrics">
+                            <div class="velocity-card" style="border-top-color: #667eea;">
+                                <div class="velocity-label">Actual Committed</div>
+                                <div class="velocity-value" style="color: #667eea;">22</div>
+                            </div>
+                            <div class="velocity-card" style="border-top-color: #43e97b;">
+                                <div class="velocity-label">Actual Delivered</div>
+                                <div class="velocity-value" style="color: #43e97b;">20</div>
+                            </div>
+                            <div class="velocity-card" style="border-top-color: #f093fb;">
+                                <div class="velocity-label">Planned Capacity</div>
+                                <div class="velocity-value" style="color: #f093fb;">26</div>
+                            </div>
+                            <div class="velocity-card" style="border-top-color: #ef4444;">
+                                <div class="velocity-label">Planned vs Delivered</div>
+                                <div class="velocity-value" style="color: #ef4444;">-23.8%</div>
+                            </div>
+                        </div>
+                        <div class="reason-box">
+                            <strong>📌 Reason:</strong> I1 was full of spikes and team had 10 days of planned OOO collectively
+                        </div>
+                    </div>
+
+                    <div class="iteration-card">
+                        <h3 class="iteration-header">26.3.I2 Metrics</h3>
+                        <div class="velocity-metrics">
+                            <div class="velocity-card" style="border-top-color: #667eea;">
+                                <div class="velocity-label">Actual Committed</div>
+                                <div class="velocity-value" style="color: #667eea;">31</div>
+                            </div>
+                            <div class="velocity-card" style="border-top-color: #43e97b;">
+                                <div class="velocity-label">Actual Delivered</div>
+                                <div class="velocity-value" style="color: #43e97b;">22</div>
+                            </div>
+                            <div class="velocity-card" style="border-top-color: #f093fb;">
+                                <div class="velocity-label">Planned Capacity</div>
+                                <div class="velocity-value" style="color: #f093fb;">28</div>
+                            </div>
+                            <div class="velocity-card" style="border-top-color: #ef4444;">
+                                <div class="velocity-label">Planned vs Delivered</div>
+                                <div class="velocity-value" style="color: #ef4444;">-21.43%</div>
+                            </div>
+                        </div>
+                        <div class="reason-box">
+                            <strong>📌 Reason:</strong> I2 had a complex feature 828513 which had lot of solution changes and team had 8 days of planned OOO collectively
+                        </div>
+                    </div>
+
+                    <div class="iteration-card" style="border: 3px solid #43e97b;">
+                        <h3 class="iteration-header" style="color: #43e97b;">26.3.I3 Metrics ⭐</h3>
+                        <div class="velocity-metrics">
+                            <div class="velocity-card" style="border-top-color: #667eea;">
+                                <div class="velocity-label">Actual Committed</div>
+                                <div class="velocity-value" style="color: #667eea;">42</div>
+                            </div>
+                            <div class="velocity-card" style="border-top-color: #43e97b;">
+                                <div class="velocity-label">Actual Delivered</div>
+                                <div class="velocity-value" style="color: #43e97b;">35</div>
+                            </div>
+                            <div class="velocity-card" style="border-top-color: #f093fb;">
+                                <div class="velocity-label">Planned Capacity</div>
+                                <div class="velocity-value" style="color: #f093fb;">31</div>
+                            </div>
+                            <div class="velocity-card" style="border-top-color: #10b981;">
+                                <div class="velocity-label">Planned vs Delivered</div>
+                                <div class="velocity-value" style="color: #10b981;">+12.9% ✅</div>
+                            </div>
+                        </div>
+                        <div class="reason-box" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white;">
+                            <strong>🎉 Great improvement in I3!</strong> Team delivered above planned capacity with strong execution.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Items Moved -->
+        <div class="slide" id="slide4">
+            <div class="card">
+                <div class="card-header">📤 Items Moved to Other Teams</div>
+                
+                <div class="image-container" style="text-align: center;">
+                    <img src="ItemsMoved26.3.I3.png" alt="Items Moved - Sprint 26.3 I3" class="uploaded-image" style="display: block;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Major Bugs & Stories -->
+        <div class="slide" id="slide5">
+            <div class="card">
+                <div class="card-header">🐛 Major Bugs & Incidents Covered</div>
+                
+                <ul class="story-list">
+                    <li class="story-item">
+                        <a href="https://dev.azure.com/CSGDevOpsAutomation/CSG-Wk-Mgmt/_workitems/edit/1184103" target="_blank" class="story-link">
+                            🔗 Bug 1184103
+                        </a>
+                        <div class="story-desc">Duplicate discounts shown after replacing perpetual discount with 12 month discount</div>
+                        <div style="margin-top: 8px;">
+                            <span class="badge badge-info">👤 Raj</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div style="margin-top: 30px; padding: 25px; background: var(--light); border-radius: 15px;">
+                    <h3 style="margin-bottom: 20px; color: var(--text-primary);">🎯 Multiple Dev Bugs from Fiber Box Feature (828513)</h3>
+                    
+                    <ul class="story-list">
+                        <li class="story-item">
+                            <a href="https://dev.azure.com/CSGDevOpsAutomation/CSG-Wk-Mgmt/_workitems/edit/1213010" target="_blank" class="story-link">
+                                🔗 Bug 1213010
+                            </a>
+                            <div class="story-desc">RetrieveFixedLineLocationContext error</div>
+                            <div style="margin-top: 8px;">
+                                <span class="badge badge-info">👤 Raj</span>
+                            </div>
+                        </li>
+                        <li class="story-item">
+                            <a href="https://dev.azure.com/CSGDevOpsAutomation/CSG-Wk-Mgmt/_workitems/edit/1223026" target="_blank" class="story-link">
+                                🔗 Bug 1223026
+                            </a>
+                            <div class="story-desc">RetrieveFixedLineLocationContext API does not return locations when serviceability is already run for an address</div>
+                            <div style="margin-top: 8px;">
+                                <span class="badge badge-info">👤 Raj</span>
+                            </div>
+                        </li>
+                        <li class="story-item">
+                            <a href="https://dev.azure.com/CSGDevOpsAutomation/CSG-Wk-Mgmt/_workitems/edit/1223039" target="_blank" class="story-link">
+                                🔗 Bug 1223039
+                            </a>
+                            <div class="story-desc">AllowedActionTypes missing value 13 in RetrieveSubscriberOfferingDetail API</div>
+                            <div style="margin-top: 8px;">
+                                <span class="badge badge-info">👤 Ambika</span>
+                            </div>
+                        </li>
+                        <li class="story-item">
+                            <a href="https://dev.azure.com/CSGDevOpsAutomation/CSG-Wk-Mgmt/_workitems/edit/1225259" target="_blank" class="story-link">
+                                🔗 Bug 1225259
+                            </a>
+                            <div class="story-desc">RetrieveConvergentBillerServiceDetails API Not Returning InstallationPointDescription, Causing Missing Installation Location in Service Details Page</div>
+                            <div style="margin-top: 8px;">
+                                <span class="badge badge-info">👤 Ambika</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: AI Corner -->
+        <div class="slide" id="slide6">
+            <div class="card">
+                <div class="card-header" style="text-align: center;">🤖 AI Corner - June 2026 Stats</div>
+                
+                <div class="ai-stats-section">
+                    <div class="ai-stat-item">
+                        <h3 class="ai-stat-title">📊 Adoption Score for June</h3>
+                        <div class="image-container" style="text-align: center; display: flex; justify-content: center;">
+                            <img src="AIStatsAdoptionScore26.3.I3.png" alt="AI Adoption Score - June 2026" class="uploaded-image" style="display: block; max-width: 90%; margin: 0 auto;">
+                        </div>
+                    </div>
+
+                    <div class="ai-stat-item">
+                        <h3 class="ai-stat-title">🏅 Team Leader Board - YTD</h3>
+                        <div class="image-container" style="text-align: center; display: flex; justify-content: center;">
+                            <img src="TeamLeaderBoardYTD26.3.I3.png" alt="Team Leader Board YTD - June 2026" class="uploaded-image" style="display: block; max-width: 90%; margin: 0 auto;">
+                        </div>
+                    </div>
+
+                    <div class="ai-stat-item">
+                        <h3 class="ai-stat-title">📈 Team Leader Board - Current Month</h3>
+                        <div class="image-container" style="text-align: center; display: flex; justify-content: center;">
+                            <img src="TeamLeaderBoardCurrentMonth26.3.I3.png" alt="Team Leader Board Current Month - June 2026" class="uploaded-image" style="display: block; max-width: 90%; margin: 0 auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Wall of Fame -->
+        <div class="slide" id="slide7">
+            <div class="wall-of-fame">
+                <div class="fame-header">
+                    🏆 Wall of Fame 🏆
+                </div>
+                
+                <div class="fame-grid">
+                    <div class="fame-card">
+                        <span class="fame-emoji">🚨</span>
+                        <div class="fame-text">
+                            Thanks to <span class="highlight">Raj and Pratik</span> for quickly jumping on the <span class="highlight">TS bridge to fix the EC issue</span>! Swift response and resolution! 🔥
+                        </div>
+                    </div>
+
+                    <div class="fame-card">
+                        <span class="fame-emoji">🎯</span>
+                        <div class="fame-text">
+                            Thanks to <span class="highlight">Ambika and Raj</span> for <span class="highlight">technical guidance</span> and for staying on top of the <span class="highlight">Fiber box feature</span>! Leadership at its best! 💪
+                        </div>
+                    </div>
+
+                    <div class="fame-card">
+                        <span class="fame-emoji">🤝</span>
+                        <div class="fame-text">
+                            Kudos to <span class="highlight">Ambika and Raj</span> for helping QAs test scenarios and <span class="highlight">clarifying queries</span>! Great collaboration! 🌟
+                        </div>
+                    </div>
+
+                    <div class="fame-card">
+                        <span class="fame-emoji">🎪</span>
+                        <div class="fame-text">
+                            Kudos to <span class="highlight">Gargi</span> for leading discussions with Sanjay and Jaspreet for <span class="highlight">Incident 1192776</span>. Successfully converted into a backlog feature! 🎉
+                        </div>
+                    </div>
+
+                    <div class="fame-card">
+                        <span class="fame-emoji">✅</span>
+                        <div class="fame-text">
+                            Kudos to <span class="highlight">Harshita and Parthiban</span> for testing the <span class="highlight">Fiber feature 828513</span> and <span class="highlight">sharing workload</span> between both! Teamwork makes the dream work! 🚀
+                        </div>
+                    </div>
+
+                    <div class="fame-card">
+                        <span class="fame-emoji">🔍</span>
+                        <div class="fame-text">
+                            Nice <span class="highlight">defect triaging</span> from <span class="highlight">Pavan</span>! Thorough analysis and attention to detail! 🎯
+                        </div>
+                    </div>
+
+                    <div class="fame-card">
+                        <span class="fame-emoji">💼</span>
+                        <div class="fame-text">
+                            Thanks to <span class="highlight">Manish</span> for being <span class="highlight">POC for our team's business queries</span>! Always available and helpful! 🙏
+                        </div>
+                    </div>
+
+                    <div class="fame-card">
+                        <span class="fame-emoji">🧪</span>
+                        <div class="fame-text">
+                            Thanks to <span class="highlight">QA team</span> for helping devs in <span class="highlight">defect triaging</span>! Cross-functional collaboration at its finest! 💎
+                        </div>
+                    </div>
+
+                    <div class="fame-card">
+                        <span class="fame-emoji">⚡</span>
+                        <div class="fame-text">
+                            Thanks to <span class="highlight">QA team</span> for testing multiple items and <span class="highlight">context switching</span> to provide better support and alignment with our deliverables! Flexibility and dedication! 🌈
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 50px; text-align: center; font-size: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+                    <p>✨ Keep up the amazing work, Team! ✨</p>
+                    <p style="margin-top: 15px; font-size: 2rem;">🎉 🎊 🎈 🎆 ✨</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Sprint Report Generated for CEI.APAC1 – 26.3 I3</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Sprint Period: 27/May/26 - 10/June/26</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
